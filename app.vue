@@ -1,14 +1,6 @@
 <template>
-  <div id="app" style="height: 100%">
+  <client-only>
     <NuxtPage />
-  </div>
+  </client-only>
 </template>
 
-<script setup>
-</script>
-
-<style>
-#app {
-  height: 100%;
-}
-</style>

@@ -7,6 +7,7 @@
 <script>
 import { onMounted, ref } from 'vue';
 import cytoscape from 'cytoscape';
+import data from '~/files/data.json';
 
 export default {
   name: 'Graph',
@@ -18,11 +19,7 @@ export default {
         cytoscape({
           container: cyRef.value, // Accede correctamente al contenedor
 
-          elements: [
-            { data: { id: 'A', label: 'Node A' } },
-            { data: { id: 'B', label: 'Node B' } },
-            { data: { source: 'A', target: 'B' } },
-          ],
+          elements: data,
 
           style: [
             {
@@ -30,13 +27,13 @@ export default {
               style: {
                 'background-color': '#0074D9',
                 label: 'data(label)',
-                color: '#fff',
+                color: '#bc1313',
               },
             },
             {
               selector: 'edge',
               style: {
-                'line-color': '#ccc',
+                'line-color': 'rgba(26,126,114,0)',
               },
             },
           ],

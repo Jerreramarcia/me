@@ -1,0 +1,11 @@
+{
+  "nodes": [
+    { "data": { "id": "History", "label": "History" } },
+    { "data": { "id": "Ancient history", "label": "Ancient history" } },
+    { "data": { "id": "Medieval history", "label": "Medieval history" } }
+  ],
+  "edges": [
+    { "data": { "source": "History", "target": "Ancient history" } },
+    { "data": { "source": "History", "target": "Medieval history" } }
+  ]
+}
